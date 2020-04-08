@@ -10,7 +10,7 @@ def initialize(name)
 end
 
 def deposit(money)
-  @balance << money
+  @balance = self + money
 end
 
 end
