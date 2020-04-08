@@ -18,7 +18,7 @@ class Transfer
   
   def execute_transaction
     binding.pry
-    @sender.balance
+    @sender.balance = 
     @receiver.deposit(money)
     
   end
