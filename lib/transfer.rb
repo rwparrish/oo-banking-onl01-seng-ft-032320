@@ -10,7 +10,7 @@ class Transfer
   end
   
   def valid?
-    @sender.BankAccount.valid?
-    .BankAccount.valid?
+    BankAccount.valid?
+  
   end
 end
