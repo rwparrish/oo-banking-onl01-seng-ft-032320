@@ -1,6 +1,7 @@
 class Transfer
   
   attr_accessor :sender, :receiver, :status, :amount
+  attr_reader :balance
   
   def initialize(sender, receiver, amount)
     @sender =  sender
@@ -15,7 +16,7 @@ class Transfer
   end
   
   def execute_transaction
-    @sender.balance
+    @sender.balance = balance - amount
     @receiver.deposit(money)
     
   end
