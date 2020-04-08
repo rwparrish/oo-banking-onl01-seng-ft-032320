@@ -15,7 +15,7 @@ class Transfer
   end
   
   def execute_transaction
-    @sender.balance = @amount - amount
+    @sender.balance(money) = @amount - amount
     @receiver.deposit
     
   end
