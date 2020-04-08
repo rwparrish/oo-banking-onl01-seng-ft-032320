@@ -13,4 +13,9 @@ class Transfer
     @sender.class.BankAccount.valid?
     @receiver.class.BankAccount.valid?
   end
+  
+  def execute_transaction
+  
+  end
 end
+
